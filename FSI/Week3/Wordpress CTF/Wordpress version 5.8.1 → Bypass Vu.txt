@@ -1,0 +1,11 @@
+Wordpress version: 5.8.1 → Bypass Vulnerability : allows remote unauthenticated attacker to obtain the email address of the user who posted a blog using WordPress Post by Email Feature.
+
+
+
+WooCommerce Plugin : 5.7.1
+Booster for WooCommerce Plugin : 5.4.3
+
+
+Users:
+
+Orval Sanford
