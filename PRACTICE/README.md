@@ -1,0 +1,1 @@
+## Collection of my personal solutions to various kata on the [CodeWars Website](https://www.codewars.com/)
