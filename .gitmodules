@@ -1,3 +1,6 @@
 [submodule "PFL/PROJ_PLOG"]
 	path = PFL/PROJ_PLOG
 	url = https://github.com/ukiyun/PROJ_PLOG
+[submodule "RCOM/PROJ_RCOM"]
+	path = RCOM/PROJ_RCOM
+	url = https://github.com/ukiyun/PROJ_RCOM.git
