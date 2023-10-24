@@ -1,4 +1,4 @@
-// Write to serial port in non-canonical mode
+    // Write to serial port in non-canonical mode
 //
 // Modified by: Eduardo Nuno Almeida [enalmeida@fe.up.pt]
 
