@@ -4,3 +4,6 @@
 [submodule "RCOM/PROJ_RCOM"]
 	path = RCOM/PROJ_RCOM
 	url = https://github.com/ukiyun/PROJ_RCOM.git
+[submodule "FSI/l12g06"]
+	path = FSI/l12g06
+	url = https://git.fe.up.pt/fsi/fsi2324/logs/l12g06.git
