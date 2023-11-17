@@ -1,0 +1,15 @@
+checksec program  outputs:
+    Arch:     i386-32-little
+    RELRO:    No RELRO
+    Stack:    No canary found
+    NX:       NX unknown - GNU_STACK missing
+    PIE:      No PIE (0x8048000)
+    Stack:    Executable
+    RWX:      Has RWX segments
+
+
+File architecture is x86 / 32bit (Arch)
+No canary protecting return address (Stack)
+Stack has execution permits (NX)
+Binary positions are not randomized (PIE: Position Independent Executable)
+Memory regions with writing, reading and executing permisions (RWX, Read-Write-Execute) -> related to Stack
