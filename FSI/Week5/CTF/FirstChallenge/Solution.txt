@@ -1,0 +1,34 @@
+CTF CHALLENGE 1 WEEK 5 NOTES:
+
+$ checksec program outputs:
+    Arch:     i386-32-little
+    RELRO:    No RELRO
+    Stack:    No canary found
+    NX:       NX unknown - GNU_STACK missing
+    PIE:      No PIE (0x8048000)
+    Stack:    Executable
+    RWX:      Has RWX segments
+
+
+File architecture is x86 / 32bit (Arch)
+No canary protecting return address (Stack)
+Stack has execution permits (NX)
+Binary positions are not randomized (PIE: Position Independent Executable)
+Memory regions with writing, reading and executing permisions (RWX, Read-Write-Execute) -> related to Stack
+
+
+Program analysis:
+
+No check for overflows
+File open (read) is saved in char array whic is defined about char buffer[32]
+Buffer Value is read from input :  "scanf("%40s", &buffer);"
+Flag to unlock is saved in another file "flag.txt"
+
+Attack
+
+Cause buffer overflow on "char buffer[32]" by writing more than 32 bytes (space originally allocated)
+After those 32 bytes, write the file name  which is to open = "flag.txt"
+    - wrote aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaflag.txt (32 a's)
+Then got : "I like what you got!"
+flag{fd8930d12058123b51efdf6e9841b396}
+Which is the asnwer to the CTF1
