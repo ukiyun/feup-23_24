@@ -7,3 +7,6 @@
 [submodule "FSI/l12g06"]
 	path = FSI/l12g06
 	url = https://git.fe.up.pt/fsi/fsi2324/logs/l12g06.git
+[submodule "PFL/Haskell/PROJ_HASKELL"]
+	path = PFL/Haskell/PROJ_HASKELL
+	url = https://github.com/ukiyun/PROJ_HASKELL
