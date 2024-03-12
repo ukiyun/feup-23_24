@@ -1,0 +1,10 @@
+# ninja log v5
+2	856	7313416799067869	CMakeFiles/da2324_p03_student.dir/data_structures/UFDS.cpp.obj	a741e82511063265
+83	1686	7313416807368959	lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	31a6f73ff7a67ac5
+58	2273	7313416813177629	CMakeFiles/da2324_p03_student.dir/TP3/ex1.cpp.obj	f69e136402ad837f
+64	2803	7313416818511584	CMakeFiles/da2324_p03_student.dir/TP3/ex3.cpp.obj	2b70333fb0540246
+71	2817	7313416818661610	CMakeFiles/da2324_p03_student.dir/TP3/ex2.cpp.obj	b6d00e418c571ab3
+76	16289	7313416953377181	lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	d60d5675ee1eda6
+16291	16760	7313416958080444	lib/libgtest.a	657f2dc567104fb7
+16761	16884	7313416959357671	lib/libgtest_main.a	9b39ea1d3a440bea
+16885	17721	7313416967498429	da2324_p03_student.exe	e1d5644b2bfc0e65

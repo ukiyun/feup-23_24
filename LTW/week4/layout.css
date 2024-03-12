@@ -1,0 +1,71 @@
+﻿/*-------------- full page / grid -----------*/
+
+body {
+    margin: -0.3em auto;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 0;
+    max-width: 60em;
+    background-color: #EDEFF0;
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-template-rows: auto auto 1fr;
+    grid-gap: 0;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#menu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 0.3em;
+}
+
+#news > article{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #ffffff;
+    margin-left:0.3em;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+aside{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+/*-------------- signup -----------*/
+
+#signup{
+    float: right;
+}
+/*-------------- menu -----------*/
+
+#menu > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 0;
+}
+
+#menu > ul > li {
+    width: 6em;
+    margin: 0;
+    flex-grow: 1;
+}
