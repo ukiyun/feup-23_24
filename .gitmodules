@@ -10,3 +10,6 @@
 [submodule "PFL/Haskell/PROJ_HASKELL"]
 	path = PFL/Haskell/PROJ_HASKELL
 	url = https://github.com/ukiyun/PROJ_HASKELL
+[submodule "DA/feup-da-proj1"]
+	path = DA/feup-da-proj1
+	url = https://github.com/ukiyun/feup-da-proj1.git
