@@ -1,4 +1,4 @@
-﻿@media (min-width: 60em) {
+﻿@media (max-width: 60em) {
     #related{
         display: none;
     }
@@ -12,18 +12,19 @@
         margin-right: 0.3em;
     }
 
+
     #news {
         margin-right: 0.3em;
     }
 }
 
-@media (max-width: 40em){
+@media (max-width: 30em){
     #related{
         display: none;
     }
 
     header {
-        padding-bottom: 2em;
+        padding-bottom: 2.5em;
     }
 
     header h1{
@@ -36,9 +37,15 @@
     }
 
     #signup {
-        width: 0;
+        display: flex;
+        position: absolute;
     }
 
+    #signup > a{
+        text-justify: initial;
+        padding-left: 0.6em;
+        margin-top: 0.6em;
+    }
     body {
         display: block;
     }
@@ -54,39 +61,33 @@
 
     /*-------------- menu -----------*/
 
-    #menu{
+    input, label{
         display: flex;
-        background-color: #2A2F33;
+        flex-direction: row;
     }
 
-    #menu #hamburger{
-        display: block;
+    #menu label{
         height: 40px;
-        width: 40px;
-        margin-right: auto;
-        position: relative;
-    }
-
-    #menu ul{
-        background-color: #2A2F33;
-        height: 100vh;
         width: 100%;
-        max-width: 450px;
-        position: fixed;
-        top: 0;
-        right: -450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 3rem;
-        transition: .3s ease;
+        margin-right: auto;
+        background-color: #2A2F33;
     }
 
-    #menu ul.active{
-        right : 0;
+
+    #menu ul {
+        background-color: #EDEFF0;
+        display: none;
+        width: 100%;
     }
+
+    #menu ul>li {
+        border-top: 0;
+        border-left: 4px solid black;
+        width: initial;
+        text-align: left;
+        text-indent: 0.7em;
+    }
+
 
     /*-------------- news -----------*/
 
@@ -101,7 +102,7 @@
     #news article header > h1 {
         position: initial;
         width: initial;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     #news article header > h1 > a{

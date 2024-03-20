@@ -60,12 +60,11 @@ aside{
 #menu > ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 0 0;
 }
 
 #menu > ul > li {
-    width: 6em;
+    display: block;
     margin: 0;
-    flex-grow: 1;
+    flex: 1;
 }
