@@ -10,3 +10,5 @@
 /.idea/
 /LCOM/.idea/
 /LCOM/proj/.idea/
+.idea/*
+*/.idea/
