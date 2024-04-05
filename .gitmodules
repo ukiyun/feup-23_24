@@ -13,3 +13,6 @@
 [submodule "DA/feup-da-proj1"]
 	path = DA/feup-da-proj1
 	url = https://github.com/ukiyun/feup-da-proj1.git
+[submodule "LTW/ltw-project-2024-ltw12g03"]
+	path = LTW/ltw-project-2024-ltw12g03
+	url = https://github.com/FEUP-LTW-2024/ltw-project-2024-ltw12g03.git
